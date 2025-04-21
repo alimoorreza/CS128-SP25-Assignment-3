@@ -7,7 +7,7 @@ You will use two given text files as inputs:
 * _robot_world1.txt_ (attached in this repository)
 * _robot_world1_heuristic_values.txt_ (attached in this repository)
 
-The goal for this robot motion planning assignment is to finish implementation of **Best First Search** and **A^{*} Search** to find the path from the robot's __initial state__ to the __goal state__ in the given _robot_world1.txt_. The heuristic values of each cell in the robot world can be looked up from the given _robot_world1_heuristic_values.txt_ (you don't need to compute this)
+The goal of this robot motion planning assignment is to complete the implementation of __Best First Search__ and __A* Search__ to find a path from the robot's _initial state_ to the _goal state_ in the given _robot_world1.txt_. The heuristic values for each cell in the robot world are provided in _robot_world1_heuristic_values.txt_ (you do not need to compute them).
 
 ## The Exercises:
 **Part 1: [3 points]** You must run at least 6 variations of the algorithms and display their results using an appropriate regression metric (again, use the scikit-learn modules). I will be looking for the following to be included in your comparison:
