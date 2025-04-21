@@ -10,13 +10,9 @@ You will use two given text files as inputs:
 The goal of this robot motion planning assignment is to complete the implementation of __Best First Search__ and __A* Search__ to find a path from the robot's _initial state_ to the _goal state_ in the given _robot_world1.txt_. The heuristic values for each cell in the robot world are provided in _robot_world1_heuristic_values.txt_ (you do not need to compute them).
 
 ## The Exercises:
-**Part 1: [3 points]** You must run at least 6 variations of the algorithms and display their results using an appropriate regression metric (again, use the scikit-learn modules). I will be looking for the following to be included in your comparison:
-* k-Nearest-Neighbor with a small value of k
-* k-Nearest-Neighbor with a large value of k
-* weighted k-Nearest-Neighbor with a small value of k (the same one you used for the unweighted version)
-* weighted k-Nearest-Neighbor with a large value of k (the same one you used for the unweighted version)
-* a decision tree with default parameter values
-* a decision tree, setting some kind of parameter that results in a smaller tree 
+**Part 1(Priority Queue): [2 points]** You must finish <span style="color:blue">class __PriorityQueueRobotNav__ </span>. Implementations for most of the methods are provided. I will be looking for the following to be included in your submission:
+* remove() method: This should remove a node from the __FRINGE__ based on priority. The node with the minimum *f_value* should be returned when this method is invoked.
+  
 
 **Part 2: [1 point]** Normalize the data and run a k-Nearest-Neighbor algorithm on it (use the StandardScalar from sklearn).
 
