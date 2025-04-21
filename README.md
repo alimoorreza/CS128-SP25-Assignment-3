@@ -10,20 +10,25 @@ You will use two given text files as inputs:
 The goal of this robot motion planning assignment is to complete the implementation of __Best First Search__ and __A* Search__ to find a path from the robot's _initial state_ to the _goal state_ in the given _robot_world1.txt_. The heuristic values for each cell in the robot world are provided in _robot_world1_heuristic_values.txt_ (you do not need to compute them).
 
 ## The Exercises:
-**Part 1(Priority Queue): [2 points]** You must finish <span style="color:blue">class __PriorityQueueRobotNav__ </span>.  Implementations for most of the methods are provided. I will be looking for the following to be included in your submission:
+**Part 1 (Robot World): [4 points]** You must finish <span style="color:blue">class __RobotWorld__ </span>. Implementations for many of the methods are provided. I will be looking for the following to be included in your submission:
+* _read_robot_world()_ method: This method should read the text file. You should do the following to finish this method:
+  * Parse each symbol from the symbolic representation of the robot world (ie, last few lines in _"robot1.txt"_)
+  * Create a *Node object*
+* _trace_path_to_origin()_ method: This method should start backtracking from the _goal node_ by following its parent node until it reaches the _start node_.
+* _get_heuristic_values()_ method: This method should parse the text file (ie, _"robot1_heuristic_values.txt"_) and fill in the matrix _'robot_2d_h'_. This matrix holds the heuristic values which will be used later.
+
+
+  
+
+**Part 2 (Priority Queue): [2 points]** You must finish class __PriorityQueueRobotNav__.  Implementations for most of the methods are provided. I will be looking for the following to be included in your submission:
 * remove() method: This should remove a node from the __FRINGE__ based on priority. The *Node object* with the minimum *f_value* should be returned when this method is invoked. Node class is given with full implementation and you don't need to change anything. You should do the following to finish _remove()_ method:
   * Find the index of *Node object* with the minimum *f_value*
   * Eliminate that *Node object* from *self.priority_queue*
   * Finally, return that *Node object*
-  
+ 
 
-**Part 2: [1 point]** Normalize the data and run a k-Nearest-Neighbor algorithm on it (use the StandardScalar from sklearn).
 
-**Part 3: [1 point]** Use a Markup cell to answer the following questions:
-* What algorithm performed better? kNN or Decision Trees? Why do you think this was the case?
-* What effect did normalizing the data have on your results? Explain. 
-
-Lastly, as always, use a Markup cell to put your name at the top of the file. Rename your file LastnameNotebook4.ipynb and submit it to this submission form. You do not need to submit a copy of the data.
+Lastly, as always, use a Markup cell to put your name at the top of the file.
 
 ## Rubric :ballot_box_with_check:
 
