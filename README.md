@@ -40,11 +40,11 @@ Lastly, as always, use a Markup cell to put your name at the top of the file.
 ## :white_check_mark: Grading: 
 I will update the following rubric with your grade after you have completed the assignment.
 ### Rubric:
-| Exercise #  | Points Awarded (out of 1)  | Notes |
+| Exercise #  | Points Awarded  | Notes |
 | --------- | ------------------- | --------- |
-| 1.1: knn           |        |    |
-| 1.2: wKNN          |        |    | 
-| 1.3: Decision Tree |        |    |
-| 2: Normalize       |        |    | 
-| 3: Conclusions     |        |    |
-| <b>Total           |    /5 | </b>   |
+| 1: Priority Queue                   |      /2  |    | 
+| 2.1: _read_robot_world()_           |      /2  |    |
+| 2.2: _get_heuristic_values()_       |      /2  |    | 
+| 2.3: _plan_robot_motion()_          |      /2  |    |  
+| 2.4: _trace_path_to_origin()_       |      /2  |    |  
+| <b>Total                            |     /10 | </b>   |
