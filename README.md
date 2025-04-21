@@ -14,8 +14,14 @@ The goal of this robot motion planning assignment is to complete the implementat
 * _read_robot_world()_ method: This method should read the text file. You should do the following to finish this method:
   * Parse each symbol from the symbolic representation of the robot world (ie, last few lines in _"robot1.txt"_)
   * Create a *Node object*
-* _trace_path_to_origin()_ method: This method should start backtracking from the _goal node_ by following its parent node until it reaches the _start node_.
 * _get_heuristic_values()_ method: This method should parse the text file (ie, _"robot1_heuristic_values.txt"_) and fill in the matrix _'robot_2d_h'_. This matrix holds the heuristic values which will be used later.
+* _plan_robot_motion()_ method: This method should do the following:
+  * Get the h_value for _init_node_ from the 'robot_2d_h'. You can use 2D indexing of the form: 'robot_2d_h[init_node.y][init_node.x]'
+  * Set the h_value, g_value, and f_value of 'init_node' by calling the appropriate methods
+  * Mark 'robot_2d_visited[...][...]' as a visited location. For example, you can use a value of 1 to mark as visited. All 2D locations are marked as unvisited with a value of 0 by default
+  * Set parent of *init_node* to None
+* _trace_path_to_origin()_ method: This method should start backtracking from the _end_node_ by following its parent node until it reaches the _init_node_.
+
 
 
   
