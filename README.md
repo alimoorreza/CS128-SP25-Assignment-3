@@ -1,4 +1,5 @@
-# CS128-SP25-Assignment-3: Robot Motion Planning
+# CS128-SP25-Assignment-3:
+## Robot Motion Planning
 
 For this assignment, you are going to implement graph search algorithms to perform robot motion planning.
 ## The Data :bar_chart: 
