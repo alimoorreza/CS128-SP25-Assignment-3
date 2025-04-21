@@ -11,7 +11,10 @@ The goal of this robot motion planning assignment is to complete the implementat
 
 ## The Exercises:
 **Part 1(Priority Queue): [2 points]** You must finish <span style="color:blue">class __PriorityQueueRobotNav__ </span>. Implementations for most of the methods are provided. I will be looking for the following to be included in your submission:
-* remove() method: This should remove a node from the __FRINGE__ based on priority. The node with the minimum *f_value* should be returned when this method is invoked.
+* remove() method: This should remove a node from the __FRINGE__ based on priority. The node with the minimum *f_value* should be returned when this method is invoked. You should do the following:
+  * Find the index of node object with the minimum *f_value*
+  * Eliminate that node object from *self.priority_queue*
+  * Finally, return that *Node* object
   
 
 **Part 2: [1 point]** Normalize the data and run a k-Nearest-Neighbor algorithm on it (use the StandardScalar from sklearn).
