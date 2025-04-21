@@ -1,0 +1,11 @@
+empty_state=O
+obstacle_state=X
+init_state=I
+goal_state=G
+height=5
+width=11
+O,O,O,O,O,O,O,O,O,O,O
+O,X,O,O,O,X,X,X,X,X,O
+O,X,X,O,O,O,G,O,O,X,O
+I,O,X,X,X,X,X,X,X,X,O
+O,O,O,O,O,O,O,O,O,O,O
