@@ -17,7 +17,7 @@ The goal of this robot motion planning assignment is to complete the implementat
   * Eliminate that *Node object* from *self.priority_queue*
   * Finally, return that *Node object*
  
-**Part 2 (Robot World): [8 points]** You must finish <span style="color:blue">class __RobotWorld__ </span>. Implementations for many of the methods are provided. I will be looking for the following to be included in your submission:
+**Part 2 (Robot World): [6 points]** You must finish <span style="color:blue">class __RobotWorld__ </span>. Implementations for many of the methods are provided. I will be looking for the following to be included in your submission:
 * _read_robot_world()_ method: This method should read the text file. You should do the following to finish this method:
   * Parse each symbol from the symbolic representation of the robot world (ie, last few lines in _"robot1.txt"_)
   * Create a *Node object*
@@ -27,8 +27,6 @@ The goal of this robot motion planning assignment is to complete the implementat
   * Set the h_value, g_value, and f_value of 'init_node' by calling the appropriate methods
   * Mark 'robot_2d_visited[...][...]' as a visited location. For example, you can use a value of 1 to mark as visited. All 2D locations are marked as unvisited with a value of 0 by default
   * Set parent of *init_node* to None
-* _trace_path_to_origin()_ method: This method should start backtracking from the _end_node_ by following its parent node until it reaches the _init_node_.
-
  
 
 
@@ -45,5 +43,4 @@ I will update the following rubric with your grade after you have completed the 
 | 2.1: Robot World::_read_robot_world()_           |      /2  |    |
 | 2.2: Robot World::_get_heuristic_values()_       |      /2  |    | 
 | 2.3: Robot World::_plan_robot_motion()_          |      /2  |    |  
-| 2.4: Robot World::_trace_path_to_origin()_       |      /2  |    |  
-| <b>Total                            |     /10 | </b>   |
+| <b>Total                            |     /8 | </b>   |
